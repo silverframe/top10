@@ -1,0 +1,6 @@
+framework module Pods_top10 {
+  umbrella header "Pods-top10-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>top10.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-top10.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CBF2B0AE1D749D1100BBC217</key>
+		<key>4C5223912C9A6AAFECE330A9F978388D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBF2B0C21D749D1100BBC217</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CBF2B0CD1D749D1100BBC217</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
