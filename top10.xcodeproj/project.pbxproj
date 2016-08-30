@@ -15,6 +15,12 @@
 		CBF2B0F71D750ACF00BBC217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF2B0F51D750ACF00BBC217 /* LaunchScreen.storyboard */; };
 		CBF2B1021D750ACF00BBC217 /* top10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1011D750ACF00BBC217 /* top10Tests.swift */; };
 		CBF2B10D1D750ACF00BBC217 /* top10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B10C1D750ACF00BBC217 /* top10UITests.swift */; };
+		CBF2B11E1D75274600BBC217 /* TrendingTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B11D1D75274600BBC217 /* TrendingTopic.swift */; };
+		CBF2B1201D752EE000BBC217 /* TrendingTopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B11F1D752EE000BBC217 /* TrendingTopicModel.swift */; };
+		CBF2B1221D7551D000BBC217 /* TrendingTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1211D7551D000BBC217 /* TrendingTopicsViewController.swift */; };
+		CBF2B1241D75523600BBC217 /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1231D75523600BBC217 /* TweetsViewController.swift */; };
+		CBF2B1281D75659600BBC217 /* TrendingTopicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */; };
+		CBF2B12C1D7596D600BBC217 /* TwitterServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12B1D7596D600BBC217 /* TwitterServiceWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		C510FB7273FFA4C3A0482A1A /* Pods-top10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-top10/Pods-top10.debug.xcconfig"; sourceTree = "<group>"; };
 		CBF2B0E91D750ACF00BBC217 /* top10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = top10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2B0EC1D750ACF00BBC217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBF2B0EE1D750ACF00BBC217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBF2B0EE1D750ACF00BBC217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		CBF2B0F11D750ACF00BBC217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF2B0F31D750ACF00BBC217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF2B0F61D750ACF00BBC217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +56,12 @@
 		CBF2B1081D750ACF00BBC217 /* top10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = top10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF2B10C1D750ACF00BBC217 /* top10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top10UITests.swift; sourceTree = "<group>"; };
 		CBF2B10E1D750ACF00BBC217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF2B11D1D75274600BBC217 /* TrendingTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingTopic.swift; sourceTree = "<group>"; };
+		CBF2B11F1D752EE000BBC217 /* TrendingTopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingTopicModel.swift; sourceTree = "<group>"; };
+		CBF2B1211D7551D000BBC217 /* TrendingTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingTopicsViewController.swift; sourceTree = "<group>"; };
+		CBF2B1231D75523600BBC217 /* TweetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingTopicViewCell.swift; sourceTree = "<group>"; };
+		CBF2B12B1D7596D600BBC217 /* TwitterServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterServiceWrapper.swift; sourceTree = "<group>"; };
 		E9BE3FF89F9BAA569244559D /* Pods-top10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top10.release.xcconfig"; path = "Pods/Target Support Files/Pods-top10/Pods-top10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,12 +124,15 @@
 		CBF2B0EB1D750ACF00BBC217 /* top10 */ = {
 			isa = PBXGroup;
 			children = (
+				CBF2B11A1D75262B00BBC217 /* Models */,
+				CBF2B11B1D75262B00BBC217 /* ViewControllers */,
+				CBF2B11C1D75262B00BBC217 /* Views */,
 				CBF2B0EC1D750ACF00BBC217 /* AppDelegate.swift */,
-				CBF2B0EE1D750ACF00BBC217 /* ViewController.swift */,
 				CBF2B0F01D750ACF00BBC217 /* Main.storyboard */,
 				CBF2B0F31D750ACF00BBC217 /* Assets.xcassets */,
 				CBF2B0F51D750ACF00BBC217 /* LaunchScreen.storyboard */,
 				CBF2B0F81D750ACF00BBC217 /* Info.plist */,
+				CBF2B12B1D7596D600BBC217 /* TwitterServiceWrapper.swift */,
 			);
 			path = top10;
 			sourceTree = "<group>";
@@ -138,6 +153,33 @@
 				CBF2B10E1D750ACF00BBC217 /* Info.plist */,
 			);
 			path = top10UITests;
+			sourceTree = "<group>";
+		};
+		CBF2B11A1D75262B00BBC217 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2B11D1D75274600BBC217 /* TrendingTopic.swift */,
+				CBF2B11F1D752EE000BBC217 /* TrendingTopicModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBF2B11B1D75262B00BBC217 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2B0EE1D750ACF00BBC217 /* ViewController.swift */,
+				CBF2B1211D7551D000BBC217 /* TrendingTopicsViewController.swift */,
+				CBF2B1231D75523600BBC217 /* TweetsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CBF2B11C1D75262B00BBC217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FCE5F53B988BCFA958A59F91 /* Pods */ = {
@@ -332,6 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF2B0EF1D750ACF00BBC217 /* ViewController.swift in Sources */,
+				CBF2B1221D7551D000BBC217 /* TrendingTopicsViewController.swift in Sources */,
+				CBF2B1281D75659600BBC217 /* TrendingTopicViewCell.swift in Sources */,
+				CBF2B12C1D7596D600BBC217 /* TwitterServiceWrapper.swift in Sources */,
+				CBF2B1241D75523600BBC217 /* TweetsViewController.swift in Sources */,
+				CBF2B11E1D75274600BBC217 /* TrendingTopic.swift in Sources */,
+				CBF2B1201D752EE000BBC217 /* TrendingTopicModel.swift in Sources */,
 				CBF2B0ED1D750ACF00BBC217 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
