@@ -33,11 +33,11 @@ class LocationModel: NSObject {
                         let locationWoeid = location.valueForKeyPath("woeid") as! Int
                         let locationObj = Location(name: locationName, woeid: locationWoeid)
                         self.locationArray.append(locationObj)
+                    
                         }
                     }
                 }
-                
-//                self.locationArray = arrayOfLocations
+
             
                 if let delegate = self.delegate {
                     delegate.dataReady()

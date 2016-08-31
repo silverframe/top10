@@ -9,12 +9,11 @@
 import UIKit
 
 
-class TrendingTopicViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TrendingTopicDelegate {
+class TrendingTopicsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TrendingTopicDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     var trendingTopics:[TrendingTopic] = [TrendingTopic]()
-    var selectedTopic: TrendingTopic?
     let model: TrendingTopicModel = TrendingTopicModel()
     
     

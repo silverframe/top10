@@ -24,7 +24,7 @@
         <!--Trending Topics-->
         <scene sceneID="Q88-bB-G1f">
             <objects>
-                <viewController id="MVA-qL-30v" customClass="TrendingTopicViewController" customModule="top10" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MVA-qL-30v" customClass="TrendingTopicsViewController" customModule="top10" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3NF-pW-p9D"/>
                         <viewControllerLayoutGuide type="bottom" id="PaW-UD-NKD"/>
@@ -157,6 +157,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="5Fn-zz-ahY" secondAttribute="bottom" id="xYa-wu-9km"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yI1-up-pU0" kind="unwind" identifier="locationPicked" unwindAction="unwindToTrendingTopicsViewController:" id="1l6-o2-lpM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

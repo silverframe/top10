@@ -24,6 +24,7 @@
 		CBF2B12E1D76764300BBC217 /* EditLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12D1D76764300BBC217 /* EditLocationViewController.swift */; };
 		CBF2B1301D7678AD00BBC217 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12F1D7678AD00BBC217 /* Location.swift */; };
 		CBF2B1321D7678D900BBC217 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1311D7678D900BBC217 /* LocationModel.swift */; };
+		CBF2B1371D76B3C800BBC217 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1361D76B3C800BBC217 /* RealmHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CBF2B12D1D76764300BBC217 /* EditLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationViewController.swift; sourceTree = "<group>"; };
 		CBF2B12F1D7678AD00BBC217 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CBF2B1311D7678D900BBC217 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		CBF2B1361D76B3C800BBC217 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		E9BE3FF89F9BAA569244559D /* Pods-top10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top10.release.xcconfig"; path = "Pods/Target Support Files/Pods-top10/Pods-top10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 		CBF2B0EB1D750ACF00BBC217 /* top10 */ = {
 			isa = PBXGroup;
 			children = (
+				CBF2B1351D76B3A300BBC217 /* Helpers */,
 				CBF2B11A1D75262B00BBC217 /* Models */,
 				CBF2B11B1D75262B00BBC217 /* ViewControllers */,
 				CBF2B11C1D75262B00BBC217 /* Views */,
@@ -189,6 +192,14 @@
 				CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CBF2B1351D76B3A300BBC217 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CBF2B1361D76B3C800BBC217 /* RealmHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FCE5F53B988BCFA958A59F91 /* Pods */ = {
@@ -383,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF2B0EF1D750ACF00BBC217 /* ViewController.swift in Sources */,
+				CBF2B1371D76B3C800BBC217 /* RealmHelper.swift in Sources */,
 				CBF2B1221D7551D000BBC217 /* TrendingTopicsViewController.swift in Sources */,
 				CBF2B1301D7678AD00BBC217 /* Location.swift in Sources */,
 				CBF2B1281D75659600BBC217 /* TrendingTopicViewCell.swift in Sources */,

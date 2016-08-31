@@ -20,16 +20,19 @@ class TrendingTopicModel: NSObject {
     
     var delegate: TrendingTopicDelegate?
     
+    var number = 1
+    
+    var params: [String: Int] = ["id" : 1]
+    
     func getTrendingTopics(){
-        Alamofire.request(.GET, "http://localhost:3000").responseJSON{(response) in
+        Alamofire.request(.GET, "http://localhost:3000", parameters: params ).responseJSON{(response) in
             
             if let JSON = response.result.value {
 
                 var arrayOfTrendingTopics = [TrendingTopic]()
                 
-                if let trendingTopics = JSON as? NSArray {
+                if let trendingTopics = JSON["trends"] as? NSArray {
                     for trendingTopic in trendingTopics {
-//                        print("hello: \(trendingTopic)")
                         let trendingTopicName = trendingTopic.valueForKeyPath("name") as! String
                         if let trendingTopicTweetVolume = trendingTopic.valueForKeyPath("tweet_volume") as? Int {
                             let trendingTopicObj = TrendingTopic(name: trendingTopicName, tweetVolume: trendingTopicTweetVolume)

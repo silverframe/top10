@@ -64,6 +64,14 @@ class EditLocationViewController: UIViewController, UITableViewDataSource, UITab
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "locationPicked" {
+            let destinationViewController = segue.destinationViewController as! TrendingTopicsViewController
+            
+            
+ 
+        }
+    }
     @IBAction func unwindToTrendingTopicsViewController(segue: UIStoryboardSegue) {
         
         
