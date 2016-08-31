@@ -40,18 +40,18 @@ class TrendingTopicViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
-        return 50
+        return 55.0
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print(trendingTopics.count )
         return trendingTopics.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BasicCell")!
-        let rank = indexPath.row
+        let rank = (indexPath.row + 1)
         let name = trendingTopics[indexPath.row].name
         let tweetVolume = trendingTopics[indexPath.row].tweetVolume
         
@@ -62,7 +62,8 @@ class TrendingTopicViewController: UIViewController, UITableViewDataSource, UITa
         trendingTopicNameLabel.text = name
         
         let trendingTopicTweetVolume = cell.viewWithTag(2) as! UILabel
-        trendingTopicTweetVolume.text = String("\(tweetVolume) Tweets")
+        if let cellTweetVolume =  tweetVolume {
+            trendingTopicTweetVolume.text = String("\(cellTweetVolume) Tweets") }
 
         return cell
         

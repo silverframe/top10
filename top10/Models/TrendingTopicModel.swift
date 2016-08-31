@@ -38,11 +38,9 @@ class TrendingTopicModel: NSObject {
                             let trendingTopicObj = TrendingTopic(name: trendingTopicName, tweetVolume: nil)
                             arrayOfTrendingTopics.append(trendingTopicObj)
                         }
-                        
-                        
                     }
                 }
-                
+
                 self.trendingTopicArray = arrayOfTrendingTopics
                 print(arrayOfTrendingTopics.count)
                 
