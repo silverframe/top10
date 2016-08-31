@@ -21,6 +21,9 @@
 		CBF2B1241D75523600BBC217 /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1231D75523600BBC217 /* TweetsViewController.swift */; };
 		CBF2B1281D75659600BBC217 /* TrendingTopicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */; };
 		CBF2B12C1D7596D600BBC217 /* TwitterServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12B1D7596D600BBC217 /* TwitterServiceWrapper.swift */; };
+		CBF2B12E1D76764300BBC217 /* EditLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12D1D76764300BBC217 /* EditLocationViewController.swift */; };
+		CBF2B1301D7678AD00BBC217 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B12F1D7678AD00BBC217 /* Location.swift */; };
+		CBF2B1321D7678D900BBC217 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF2B1311D7678D900BBC217 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		CBF2B1231D75523600BBC217 /* TweetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
 		CBF2B1271D75659600BBC217 /* TrendingTopicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingTopicViewCell.swift; sourceTree = "<group>"; };
 		CBF2B12B1D7596D600BBC217 /* TwitterServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterServiceWrapper.swift; sourceTree = "<group>"; };
+		CBF2B12D1D76764300BBC217 /* EditLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationViewController.swift; sourceTree = "<group>"; };
+		CBF2B12F1D7678AD00BBC217 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CBF2B1311D7678D900BBC217 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		E9BE3FF89F9BAA569244559D /* Pods-top10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top10.release.xcconfig"; path = "Pods/Target Support Files/Pods-top10/Pods-top10.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +166,8 @@
 			children = (
 				CBF2B11D1D75274600BBC217 /* TrendingTopic.swift */,
 				CBF2B11F1D752EE000BBC217 /* TrendingTopicModel.swift */,
+				CBF2B12F1D7678AD00BBC217 /* Location.swift */,
+				CBF2B1311D7678D900BBC217 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 			children = (
 				CBF2B0EE1D750ACF00BBC217 /* ViewController.swift */,
 				CBF2B1211D7551D000BBC217 /* TrendingTopicsViewController.swift */,
+				CBF2B12D1D76764300BBC217 /* EditLocationViewController.swift */,
 				CBF2B1231D75523600BBC217 /* TweetsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -375,7 +384,10 @@
 			files = (
 				CBF2B0EF1D750ACF00BBC217 /* ViewController.swift in Sources */,
 				CBF2B1221D7551D000BBC217 /* TrendingTopicsViewController.swift in Sources */,
+				CBF2B1301D7678AD00BBC217 /* Location.swift in Sources */,
 				CBF2B1281D75659600BBC217 /* TrendingTopicViewCell.swift in Sources */,
+				CBF2B12E1D76764300BBC217 /* EditLocationViewController.swift in Sources */,
+				CBF2B1321D7678D900BBC217 /* LocationModel.swift in Sources */,
 				CBF2B12C1D7596D600BBC217 /* TwitterServiceWrapper.swift in Sources */,
 				CBF2B1241D75523600BBC217 /* TweetsViewController.swift in Sources */,
 				CBF2B11E1D75274600BBC217 /* TrendingTopic.swift in Sources */,

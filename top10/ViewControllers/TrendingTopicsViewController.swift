@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import OAuthSwift
+
 
 class TrendingTopicViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TrendingTopicDelegate {
     
@@ -72,5 +72,11 @@ class TrendingTopicViewController: UIViewController, UITableViewDataSource, UITa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
     }
+    
+    @IBAction func unwindToTrendingTopicsViewController(segue: UIStoryboardSegue) {
+        
+        
+    }
+    
     
 }
