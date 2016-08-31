@@ -22,10 +22,8 @@ class TrendingTopicModel: NSObject {
     
     var number = 1
     
-    var params: [String: Int] = ["id" : 1]
-    
     func getTrendingTopics(params: [String: Int]){
-        Alamofire.request(.GET, "http://localhost:3000", parameters: params ).responseJSON{(response) in
+        Alamofire.request(.GET, "https://top10-server.herokuapp.com/", parameters: params ).responseJSON{(response) in
             
             if let JSON = response.result.value {
 
@@ -43,9 +41,8 @@ class TrendingTopicModel: NSObject {
                         }
                     }
                 }
-
-                self.trendingTopicArray = arrayOfTrendingTopics
-                print(arrayOfTrendingTopics.count)
+                
+                self.trendingTopicArray = Array(arrayOfTrendingTopics[0..<10])
                 
                 if let delegate = self.delegate {
                     delegate.dataReady()

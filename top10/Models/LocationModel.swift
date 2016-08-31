@@ -21,21 +21,22 @@ class LocationModel: NSObject {
     var delegate: LocationDelegate?
     
     func getLocations(){
-        Alamofire.request(.GET, "http://localhost:3000/locations").responseJSON{(response) in
+        Alamofire.request(.GET, "https://top10-server.herokuapp.com/locations").responseJSON{(response) in
             
             if let JSON = response.result.value {
                 
-//                var arrayOfLocations = [Location]()
+                var arrayOfLocations = [Location]()
                 
                 if let locations = JSON as? NSArray {
                     for location in locations {
                         let locationName = location.valueForKeyPath("name") as! String
                         let locationWoeid = location.valueForKeyPath("woeid") as! Int
                         let locationObj = Location(name: locationName, woeid: locationWoeid)
-                        self.locationArray.append(locationObj)
+                        arrayOfLocations.append(locationObj)
                     
                         }
                     }
+                self.locationArray = arrayOfLocations
                 }
             if let delegate = self.delegate {
                 delegate.dataReady()

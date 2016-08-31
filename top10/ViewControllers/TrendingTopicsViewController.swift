@@ -64,6 +64,8 @@ class TrendingTopicsViewController: UIViewController, UITableViewDataSource, UIT
         let name = trendingTopics[indexPath.row].name
         let tweetVolume = trendingTopics[indexPath.row].tweetVolume
         
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        
         let trendingTopicRankLabel = cell.viewWithTag(3) as! UILabel
         trendingTopicRankLabel.text = String(rank)
         
