@@ -14,15 +14,24 @@ class TrendingTopicsViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var tableView: UITableView!
     
     var trendingTopics:[TrendingTopic] = [TrendingTopic]()
+    
     let model: TrendingTopicModel = TrendingTopicModel()
     
+    var selectedLocation: Location?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.model.delegate = self 
-        model.getTrendingTopics()
+        model.getTrendingTopics(["id": 1])
         self.tableView.dataSource = self
         self.tableView.delegate = self
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if let location = self.selectedLocation {
+            let params: [String: Int] = ["id": location.woeid]
+            model.getTrendingTopics(params)
+        }
     }
     
     override func didReceiveMemoryWarning() {

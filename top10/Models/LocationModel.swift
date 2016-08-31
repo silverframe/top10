@@ -37,10 +37,8 @@ class LocationModel: NSObject {
                         }
                     }
                 }
-
-            
-                if let delegate = self.delegate {
-                    delegate.dataReady()
+            if let delegate = self.delegate {
+                delegate.dataReady()
             }
         }
     }
@@ -49,7 +47,8 @@ class LocationModel: NSObject {
 extension LocationModel {
     
     func saveLocationArray(){
-        if !NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce") {
+        
+//        if !NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce") != true {
         Alamofire.request(.GET, "http://localhost:3000/locations").responseJSON{(response) in
             
             if let JSON = response.result.value {
@@ -63,8 +62,11 @@ extension LocationModel {
                         }
                     }
                 }
+            if let delegate = self.delegate {
+                delegate.dataReady()
             }
-        locationArraySaved()        
+//        }
+//        locationArraySaved()
     }
     
     func locationArraySaved(){

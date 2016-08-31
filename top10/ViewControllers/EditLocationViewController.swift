@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 class EditLocationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, LocationDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    
+//    var locations: Results<Location>!{
+//        didSet {
+//            tableView.reloadData()
+//        }
+//    }
     
     var locations:[Location] = [Location]()
     var selectedLocation: Location?
@@ -45,7 +53,7 @@ class EditLocationViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return locations.count 
+        return locations.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -61,17 +69,19 @@ class EditLocationViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedLocation = self.locations[indexPath.row]
         
+        self.performSegueWithIdentifier("locationPicked", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "locationPicked" {
             let destinationViewController = segue.destinationViewController as! TrendingTopicsViewController
+            destinationViewController.selectedLocation = self.selectedLocation
             
-            
- 
         }
     }
+    
     @IBAction func unwindToTrendingTopicsViewController(segue: UIStoryboardSegue) {
         
         

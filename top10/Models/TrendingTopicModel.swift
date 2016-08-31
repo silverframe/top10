@@ -24,7 +24,7 @@ class TrendingTopicModel: NSObject {
     
     var params: [String: Int] = ["id" : 1]
     
-    func getTrendingTopics(){
+    func getTrendingTopics(params: [String: Int]){
         Alamofire.request(.GET, "http://localhost:3000", parameters: params ).responseJSON{(response) in
             
             if let JSON = response.result.value {
