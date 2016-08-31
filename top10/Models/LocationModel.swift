@@ -41,8 +41,33 @@ class LocationModel: NSObject {
             
                 if let delegate = self.delegate {
                     delegate.dataReady()
-                }
             }
         }
     }
+}
 
+extension LocationModel {
+    
+    func saveLocationArray(){
+        if !NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce") {
+        Alamofire.request(.GET, "http://localhost:3000/locations").responseJSON{(response) in
+            
+            if let JSON = response.result.value {
+                if let locations = JSON as? NSArray {
+                    for location in locations {
+                        let locationName = location.valueForKeyPath("name") as! String
+                        let locationWoeid = location.valueForKeyPath("woeid") as! Int
+                        let newLocation = Location(name: locationName, woeid: locationWoeid)
+                        RealmHelper.addLocation(newLocation)
+                            }
+                        }
+                    }
+                }
+            }
+        locationArraySaved()        
+    }
+    
+    func locationArraySaved(){
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
+    }
+}
