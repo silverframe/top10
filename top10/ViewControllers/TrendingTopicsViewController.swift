@@ -31,6 +31,7 @@ class TrendingTopicsViewController: UIViewController, UITableViewDataSource, UIT
         if let location = self.selectedLocation {
             let params: [String: Int] = ["id": location.woeid]
             model.getTrendingTopics(params)
+            self.title = location.name
         }
     }
     
