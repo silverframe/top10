@@ -61,8 +61,8 @@ class EditLocationViewController: UIViewController, UITableViewDataSource, UITab
         
         let name = locations[indexPath.row].name
         
-        let LocationNameLabel = cell.viewWithTag(4) as! UILabel
-        LocationNameLabel.text = String(name)
+        let locationNameLabel = cell.viewWithTag(4) as! UILabel
+        locationNameLabel.text = String(name)
         
         return cell
         
